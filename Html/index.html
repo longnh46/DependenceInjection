@@ -12,28 +12,28 @@
   <div>
     <div>
       <h2 class="text-center">Class Marksheet</h2>
-      <div class="form-add">
+      <div class="form-add" id="frmAddStudent">
         <table>
           <tr>
             <td>Họ tên :</td>
-            <td><input type="text"></td>
+            <td><input type="text" property="Name"></td>
           </tr>
           <tr>
             <td>Điểm toán:</td>
-            <td><input type="text"></td>
+            <td><input type="text" property="MathScores"></td>
           </tr>
           <tr>
             <td>Điểm lý :</td>
-            <td><input type="text"></td>
+            <td><input type="text" property="PhysicsPoints"></td>
           </tr>
           <tr>
             <td>Điểm hóa : </td>
-            <td><input type="text"></td>
+            <td><input type="text" property="ChemistryScore"></td>
           </tr>
           <tr>
             <td colspan="2">
               <div class="justìy-center">
-                <button>Nhập</button>
+                <button id="addStudent"> Nhập</button>
                 <button class="hide">Sửa</button>
               </div>
             </td>
@@ -43,18 +43,22 @@
 
     </div>
     <div class="content">
-      <table>
+      <table id="main-table">
         <thead>
           <tr>
-            <th propertyName="Id">STT</th>
-            <th propertyName="Name">Họ tên</th>
-            <th propertyName="MathScores">Điểm toán</th>
-            <th propertyName="PhysicsPoints">Điểm lý</th>
-            <th propertyName="ChemistryScore">Điểm hóa</th>
-            <th propertyName="Avg">Điểm trung bình</th>
+            <th property="STT">STT</th>
+            <th property="Name">Họ tên</th>
+            <th property="MathScores">Điểm toán</th>
+            <th property="PhysicsPoints">Điểm lý</th>
+            <th property="ChemistryScore">Điểm hóa</th>
+            <th property="Avg">Điểm trung bình</th>
+            <th>Thao tác</th>
           </tr>
         </thead>
         <tbody>
+          <tr pro>
+            <td></td>
+          </tr>
         </tbody>
         <tfoot>
           <tr>
@@ -73,7 +77,8 @@
       </table>
     </div>
   </div>
-  <script src="/JS/index.js"></script>
+  <script src="/JS/student.js"></script>
+  <script src="/JS/Common/common.js"></script>
 </body>
 
 </html>
