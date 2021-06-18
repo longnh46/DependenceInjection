@@ -20,21 +20,21 @@
           </tr>
           <tr>
             <td>Điểm toán:</td>
-            <td><input type="text" property="MathScores"></td>
+            <td><input type="number" min="0" max="10" property="MathScores"></td>
           </tr>
           <tr>
             <td>Điểm lý :</td>
-            <td><input type="text" property="PhysicsPoints"></td>
+            <td><input type="number" min="0" max="10" property="PhysicsPoints"></td>
           </tr>
           <tr>
             <td>Điểm hóa : </td>
-            <td><input type="text" property="ChemistryScore"></td>
+            <td><input type="number" min="0" max="10" property="ChemistryScore"></td>
           </tr>
           <tr>
             <td colspan="2">
               <div class="justìy-center">
-                <button id="addStudent"> Nhập</button>
-                <button class="hide">Sửa</button>
+                <button id="addStudent" class="btn"> Nhập</button>
+                <button id="saveStudent" class="btn" disabled>Sửa</button>
               </div>
             </td>
           </tr>
@@ -64,10 +64,10 @@
           <tr>
             <td>
               <div class="justìy-center">
-                <button>
+                <button id="caculatorAvgPoint">
                   Tính điểm trung bình
                 </button>
-                <button>
+                <button id="studentGood">
                   Xác định học sinh giỏi
                 </button>
               </div>
@@ -77,8 +77,9 @@
       </table>
     </div>
   </div>
-  <script src="/JS/student.js"></script>
-  <script src="/JS/Common/common.js"></script>
+  <script src="/JS/Common/base.js"></script>
+  <script src="/JS/Common/helper.js"></script>
+  <script src="/JS/index.js"></script>
 </body>
 
 </html>

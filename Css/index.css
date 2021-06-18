@@ -30,9 +30,6 @@ h2 {
 	display: flex;
     justify-content: center;
 }
-.justìy-center button {
-	padding: 5px 10px;
-}
 .content {
 	width: 80%;
 	margin: 40px auto;
@@ -45,8 +42,25 @@ thead, tbody tr { display: block; }
 tfoot .justìy-center button {
 	margin-right: 20px;
 	margin-top: 20px;
+	padding: 10px 20px;
 }
 
 td {
 	min-width: 150px;
+}
+.border-red {
+	border: 1px solid red;
+	color: red;
+}
+.btn {
+	padding: 5px 15px;
+    margin-right: 20px;
+}
+
+#main-table tr td {
+	text-align: center;
+	border: 1px solid #494546 ;
+}
+#main-table  tfoot tr td {
+	border: none;
 }
